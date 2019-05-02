@@ -102,7 +102,7 @@ static size_t generate_uuid (const char *src, char *dest) {
   }
   p += format_to_hex(src, 6, p);
 
-  return p - dest;
+  return (size_t)(p - dest);
 }
 
 static int generate_pool_secret (char *dest) {
